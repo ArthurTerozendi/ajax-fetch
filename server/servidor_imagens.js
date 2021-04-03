@@ -9,6 +9,7 @@ app.listen(8080, () => {
     console.log(`Servidor iniciado!`)
 })
 
+const img = ['../server/img/garfield1.jpg', '../server/img/garfield2.png', '../server/img/garfield3.gif', '../server/img/garfield4.jpg', '../server/img/garfield8.png', '../server/img/garfield20.jpg']
 let index = 0;
 app.get('/imagens', (req, res, next) => {
     res.send({img: img[index]});
@@ -37,6 +38,3 @@ app.post('/contador', (req, res, next) => {
     }
     res.send({'sim': sim, 'nao': nao});
 });
-
-
-const img = ['../server/img/garfield1.jpg', '../server/img/garfield2.png', '../server/img/garfield3.gif', '../server/img/garfield4.jpg', '../server/img/garfield8.png', '../server/img/garfield20.jpg']
