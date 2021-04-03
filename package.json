@@ -1,0 +1,23 @@
+{
+  "name": "ajax-fetch",
+  "version": "1.0.0",
+  "description": "Aplicação AJAX utilizando o fetch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurTerozendi/ajax-fetch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArthurTerozendi/ajax-fetch/issues"
+  },
+  "homepage": "https://github.com/ArthurTerozendi/ajax-fetch#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
