@@ -23,20 +23,25 @@
     </div>
     <script>
         const url = "http://localhost:8080/imagens";
-            fetch(url)
-                .then(resp => resp.json())
-                .then(ret => {
-                    console.log(ret);
-                    document.getElementById('img').src = ret.img;
-                })
+        fetch(url)
+            .then(resp => resp.json())
+            .then(ret => {
+                console.log(ret);
+                document.getElementById('img').src = ret.img;
+            })
+            .catch(
+                error => console.error(error)
+            );
         function nextImg() {
-            const url = "http://localhost:8080/imagens";
             fetch(url)
                 .then(resp => resp.json())
                 .then(ret => {
                     console.log(ret);
                     document.getElementById('img').src = ret.img;
                 })
+                .catch(
+                    error => console.error(error)
+                );
         }
     </script>
 </body>

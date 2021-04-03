@@ -60,7 +60,7 @@
         });
 
         function fillFields() {
-            let cep = document.getElementById('cep').value; 
+            let cep = document.getElementById('cep').value;
             if (cep != "_____-___") {
                 const url = `https://brasilapi.com.br/api/cep/v1/${cep}`;
                 fetch(url)
@@ -71,6 +71,9 @@
                         document.getElementById("bairro").value = ret.neighborhood;
                         document.getElementById("endereco").value = ret.street;
                     })
+                    .catch(
+                        error => console.error(error)
+                    );
             }
         }
     </script>
